@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Mobile Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-md-none">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fas fa-user me-2"></i>About Me
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            <i class="fas fa-folder me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-envelope me-2"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tablet Navigation -->
+    <nav class="tablet-nav fixed-top d-none d-md-block d-xl-none">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link tablet-nav-link" href="#about">
+                            <i class="fas fa-user me-2"></i>About Me
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tablet-nav-link" href="#projects">
+                            <i class="fas fa-folder me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tablet-nav-link" href="#contact">
+                            <i class="fas fa-envelope me-2"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Desktop Side Panel -->
+    <div class="side-panel d-none d-xl-flex">
+        <div class="side-panel-content">
+            <div class="side-panel-brand mb-4">
+                <h4 class="text-accent fw-bold">Portfolio</h4>
+            </div>
+            <nav class="side-nav">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a class="side-nav-link" href="#about">
+                            <i class="fas fa-user"></i>
+                            <span>About Me</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="side-nav-link" href="#projects">
+                            <i class="fas fa-folder"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="side-nav-link" href="#contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-panel-social mt-auto">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="hero-content text-center">
+                        <h1 class="display-4 fw-bold mb-3">안녕하세요!</h1>
+                        <h2 class="h3 mb-4 text-accent"><span class="typed-text">김개발</span> '장명진' 입니다</h2>
+                        <p class="lead mb-4">논리와 감성을 융합한 1인창업가를 꿈꾸며, 기술로 도구를 만들고 설득력으로 사람을 움직이는 개발자입니다.</p>
+                        <div class="hero-buttons mb-4">
+                            <a href="#projects" class="btn btn-accent btn-lg me-3">프로젝트 보기</a>
+                            <a href="#contact" class="btn btn-outline-accent btn-lg">연락하기</a>
+                        </div>
+                        <div class="hero-image mt-4">
+                            <img src="/portfolio/images/명탐정 피카츄.png" alt="Profile" class="img-fluid rounded-3 profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="fw-bold">About Me</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-3">개발자 여정</h3>
+                    <p>현재 오즈코딩스쿨에서 React + Node.js 풀스택 개발을 배우며, 매월 "돈 버는 서비스"를 제작하는 목표로 12개의 서비스 개발에 도전하고 있습니다.</p>
+                    <p>단순한 개발자가 아닌, 비즈니스 교육 컨설팅 경험을 바탕으로 사용자의 니즈를 이해하고 해결책을 제시하는 개발자가 되고자 합니다.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-3">기술 스택</h3>
+                    <div class="skill-item mb-3">
+                        <span class="fw-bold">Frontend</span>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-accent" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <span class="fw-bold">Backend</span>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-accent" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <span class="fw-bold">Database</span>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-accent" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-dark main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="fw-bold">Projects</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card h-100">
+                        <div class="project-content">
+                            <h5 class="project-title">위클리 중심 Todo 관리 앱</h5>
+                            <p class="project-description">위클리 중심 Todo 관리 애플리케이션입니다. 복잡한 일들을 보다 직관적이고, 보다 심플하게 해결하세요.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-accent me-1">React</span>
+                                <span class="badge bg-accent me-1">JavaScript</span>
+                                <span class="badge bg-accent">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card h-100">
+
+                        <div class="project-content">
+                            <h5 class="project-title">테토/에겐 테스트</h5>
+                            <p class="project-description">최신 트렌드를 반영한 심리 테스트 웹 애플리케이션입니다. 당신은 테토인가요? 에겐인가요? 연애도 트렌드입니다.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-accent me-1">JavaScript</span>
+                                <span class="badge bg-accent me-1">API</span>
+                                <span class="badge bg-accent">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card h-100">
+
+                        <div class="project-content">
+                            <h5 class="project-title">퇴사 정보 플랫폼</h5>
+                            <p class="project-description">현명한 퇴사를 위한 퇴사 정보 웹 플랫폼입니다. 현명한 사람은 준비가 되어 있습니다. 당신은 준비가 되어 있나요?</p>
+                            <div class="project-tech">
+                                <span class="badge bg-accent me-1">HTML5</span>
+                                <span class="badge bg-accent me-1">CSS3</span>
+                                <span class="badge bg-accent">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="fw-bold">Contact</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">이름</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">이메일</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">메시지</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-accent btn-lg">메시지 보내기</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
